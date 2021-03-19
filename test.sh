@@ -2,4 +2,4 @@
 #comment
 steps:
 - name: gcr.io/cloud-builders/gsutil
-  args: ['cp', '/workspace', 'gs://projet_smart_gcp/Github']
+  args: ['cp', '/workspace', 'gs://projet_smart_gcp']
