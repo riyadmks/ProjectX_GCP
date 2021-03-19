@@ -1,3 +1,5 @@
 #!/bin/bash
 #comment
-echo "test success"
+steps:
+- name: gcr.io/cloud-builders/gsutil
+  args: ['cp', '/workspace', 'gs://projet_smart_gcp/Github']
