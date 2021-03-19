@@ -1,3 +1,9 @@
-steps:
+steps1:
+- id: Start test.sh
+  name: gcr.io/cloud-builders/gcloud
+  entrypoint: 'bash'
+  args: ["test.sh"]
+
+steps2:
 - name: gcr.io/cloud-builders/gsutil
-  args: ['cp', '/workspace', 'gs://projet_smart_gcp']
+  args: ['cp', 'https://github.com/riyadmks/ProjectX_GCP', 'gs://projet_smart_gcp/Github/']
