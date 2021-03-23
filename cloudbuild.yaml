@@ -1,3 +1,11 @@
 steps:
+- name: ubuntu
+  args: ['bash', '-c', "echo '$COMMIT_SHA' > REVISION.txt"]
 - name: gcr.io/cloud-builders/gsutil
-  args: ['cp', 'https://github.com/riyadmks/ProjectX_GCP', 'gs://projet_smart_gcp/Github/']
+  args:
+    - '-m'
+    - 'rsync'
+    - '-d'
+    - '-r'
+    - 'dags'
+    - 'gs://projet_smart_gcp/Github/'
