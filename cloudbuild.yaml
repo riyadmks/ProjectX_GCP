@@ -1,9 +1,3 @@
 steps:
 - name: gcr.io/cloud-builders/gsutil
-  args:
-    - '-m'
-    - 'rsync'
-    - '-d'
-    - '-r'
-    - 'dags'
-    - 'gs://europe-west1-schedule-b237bc68-bucket/dags/'
+  args: ['cp', '/workspace', 'gs://europe-west1-schedule-b237bc68-bucket/dags/']
