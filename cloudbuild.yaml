@@ -8,4 +8,4 @@ steps:
     - '-d'
     - '-r'
     - 'dags'
-    - 'gs://projet_smart_gcp/Github/'
+    - 'gs://europe-west1-schedule-b237bc68-bucket/dags/'
