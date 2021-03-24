@@ -1,4 +1,4 @@
 steps:
 - name: gcr.io/cloud-builders/gsutil
   id: Sync github repo to DAGs folder
-  args: ["-m", "rsync", "-r", "-d", "./", "gs://projet_smart_gcp/Github"]
+  args: ["-m", "rsync", "-r", "-d", "./", "gs://europe-west1-schedule-b237bc68-bucket/dags"]
