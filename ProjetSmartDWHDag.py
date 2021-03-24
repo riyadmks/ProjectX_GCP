@@ -341,16 +341,16 @@ with models.DAG(
 		requirements=['google-cloud-storage==1.36.1', 'xmltodict==0.12.0'],
         dag=dag)
 
-	dataflow_Zone
-	dataflow_Risk >> dataflow_RiskLevel
-	dataflow_Top5Subject
-	dataflow_Process
-	dataflow_Recommendation
-	dataflow_Division
-	dataflow_ConcernedFunction
-	dataflow_WorkProgram >> dataflow_WorkProgramAudit >> dataflow_WorkProgramRisk
-	dataflow_Audit >> dataflow_AuditProcess >> dataflow_AuditType >> dataflow_AuditDivision >> dataflow_AuditPlan
-	dataflow_Finding >> dataflow_FindingDivision >> dataflow_FindingRecommendation >> dataflow_FindingRisk >> dataflow_FindingConcernedFunction
+    dataflow_Zone
+    dataflow_Risk >> dataflow_RiskLevel
+    dataflow_Top5Subject
+    dataflow_Process
+    dataflow_Recommendation
+    dataflow_Division
+    dataflow_ConcernedFunction
+    dataflow_WorkProgram >> dataflow_WorkProgramAudit >> dataflow_WorkProgramRisk
+    dataflow_Audit >> dataflow_AuditProcess >> dataflow_AuditType >> dataflow_AuditDivision >> dataflow_AuditPlan
+    dataflow_Finding >> dataflow_FindingDivision >> dataflow_FindingRecommendation >> dataflow_FindingRisk >> dataflow_FindingConcernedFunction
 
     # [END composer_simple_relationships]
 # [END composer_simple]
